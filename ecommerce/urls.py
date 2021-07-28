@@ -41,7 +41,8 @@ urlpatterns = [
     path('login/', login_page, name='login'),
     path('register/', register_page, name='register'),
     path('bootstrap/', TemplateView.as_view(template_name='bootstrap/example.html')),
-    path('products/', include("products.urls") ),
+    path('products/', include("products.urls")),
+    path('search/', include("search.urls")),
 
     # path('featured/', ProductFeatureListView.as_view()),
     # path('featured/<int:pk>', ProductFeatureDetailView.as_view()),
